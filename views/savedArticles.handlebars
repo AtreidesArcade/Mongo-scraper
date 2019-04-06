@@ -1,0 +1,25 @@
+{{#each dbArticle}}
+<div data-_id={{_id}} class="card">
+    <div class="row no-gutters">
+        <div class="col-auto">
+            <img src={{photoURL}} width="250" class="img-fluid" alt="">
+        </div>
+        <div class="col">
+            <br>
+            <div class="card-block px-2">
+                <h4 class="card-title"><a class="article-link" target="_blank" rel="noopener noreferrer"
+                        href={{url}}>{{headline}}</a></h4>
+                <p class="card-text">{{summary}}</p>
+                <button class="btn btn-danger deleteBtn">Delete From Saved</button>
+                <button class="btn btn-success notesBtn" data-toggle="modal" data-target="#myModal">Add Article Notes</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+
+<style type="text/css">
+    .scrapeBtn {
+        display: none;
+    }
+</style>

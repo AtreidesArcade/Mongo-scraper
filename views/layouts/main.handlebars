@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NYT Technology Scraper</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/materia/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Notes For Article: <span id="article-id"></span></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <ul class="list-group">
+          </ul>
+
+          <form>
+            <div class="form-group">
+              <label for="new-note" class="col-form-label">New Note:</label>
+              <textarea class="form-control" rows="3" id="new-note"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary saveNoteBtn" data-dismiss="modal">Save Note</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: grey;">
+    <a class="navbar-brand">
+      <img src="assets/img/nyt.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      New York Times Tech Talks
+    </a>
+
+    <button class="btn btn-danger mr-2 homeBtn" data-type="home">Home</button>
+    <button class="btn btn-danger mr-2 savedBtn" data-type="saved">Saved Articles</button>
+    <button class="btn btn-danger mr-2 scrapeBtn" data-type="scrape">Scrape new articles!</button>
+    <button class="btn btn-danger mr-2 clearBtn" data-type="clear">Clear saved articles!</button>
+  </nav>
+
+  <div class="text-center">
+    <div class="background-image">
+    </div>
+  </div>
+
+  <div class="container-fluid article-container">
+
+    {{{body}}}
+
+  </div>
+
+  <footer class="footer" style="background-color: #e3f2fd;">
+    <div class="container">
+      <p>NYT Scrape</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+  <script src="/assets/javascript/app.js"></script>
+
+</body>
+
+</html>
