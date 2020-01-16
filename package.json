@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leronj23/Mongo-Scraper.git"
+    "url": "git+https://github.com/jameslfuller/Mongo-scraper.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leronj23/Mongo-Scraper/issues"
+    "url": "https://github.com/jameslfuller/Mongo-scraper/issues"
   },
-  "homepage": "https://github.com/leronj23/Mongo-Scraper#readme",
+  "homepage": "https://github.com/jameslfuller/Mongo-scraper#readme",
   "dependencies": {
     "axios": "^0.18.1",
     "cheerio": "^1.0.0-rc.3",
