@@ -44,7 +44,7 @@ module.exports = {
                 var summary = $(element).find(".css-1echdzn").text();
 
                 // Get URL
-                var url = "https://www.nytimes.com" + $(element).children().attr("href");
+                var url = "https://www.nytimes.com/section/technology" + $(element).children().attr("href");
 
                 // Photo URL
                 let photoURL = $(element).find(".css-11cwn6f").attr("src");
