@@ -22,7 +22,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-mongoose-generator": "^3.0.3",
-    "handlebars": "^4.7.2",
+    "handlebars": "^4.7.7",
     "mongodb": "^3.5.0",
     "mongoose": "^5.8.7",
     "morgan": "^1.9.1",
